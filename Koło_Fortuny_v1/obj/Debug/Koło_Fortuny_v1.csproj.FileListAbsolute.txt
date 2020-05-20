@@ -1,0 +1,15 @@
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\Koło_Fortuny_v1.exe.config
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\Koło_Fortuny_v1.exe
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\Koło_Fortuny_v1.pdb
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\EntityFramework.dll
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\EntityFramework.xml
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.csprojAssemblyReference.cache
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.Form1.resources
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.Form2.resources
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.Properties.Resources.resources
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.csproj.GenerateResource.cache
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.csproj.CopyComplete
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.exe
+C:\Users\barto\Desktop\Koło_Fortuny_v1\Koło_Fortuny_v1\obj\Debug\Koło_Fortuny_v1.pdb
