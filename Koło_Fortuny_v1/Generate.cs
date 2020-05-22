@@ -19,7 +19,7 @@ namespace Koło_Fortuny_v1
         public static string GenerateWord()
         {
             PasswordsEntities passwordsEntities = new PasswordsEntities();
-            var query = passwordsEntities.Passwords.OrderBy(x => Guid.NewGuid()).Where(x=>x.Id==5).FirstOrDefault().Haslo;
+            var query = passwordsEntities.Passwords.OrderBy(x => Guid.NewGuid()).FirstOrDefault().Haslo;
             return query;
         }
 

@@ -13,16 +13,16 @@ namespace Koło_Fortuny_v1
     public partial class Form2 : Form
     {
         public Game CurrentGame { get; set; }
-        public Generate generate { get; set; }
         public Form2()
         {
             InitializeComponent();
             CurrentGame = new Game();
             lblWord.Text = CurrentGame.CurrentState;
-            lblCategory.Text = CurrentGame.Category;
+            lblCategory.Text = $"Kategoria: {CurrentGame.Category}";
             textBoxGuess.Enabled = false;
             UpdateCurrentErrors();
             OffButtons();
+            lblBalance.Text = $"Stan konta: {CurrentGame.BalanceAccount}";
         }
         public void UpdateCurrentErrors()
         {
@@ -146,24 +146,26 @@ namespace Koło_Fortuny_v1
         private void Buttons_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            bool result=false;
+            bool result = false;
             OffButtons();
             btnRoll.Visible = false;
             btnRoll.Enabled = true;
             char text;
             text = Char.Parse(button.Text);
             result = CurrentGame.Try(text);
-
+            
             if (result)
             {
                 lblWord.Text = CurrentGame.CurrentState;
                 CurrentGame.BalanceAccount = CurrentGame.SumBalance(CurrentGame.BalanceAccount, CurrentGame.Prize);
                 lblBalance.Text = $"Stan konta: {CurrentGame.BalanceAccount.ToString()}";
+                lblPrice.Text = "Zakręć jeszcze raz";
                 btnRoll.Visible = true;
                 OffButtons();
                 button.Visible = false;
+                lblNotification.Text = "Dobry traf";
 
-                if (CurrentGame.LettersLeft() <= 0)
+                if (CurrentGame.LettersAndSpacesLeft() <= 0)
                 {
                     MessageBox.Show($"Brawo ! Prawidłowa odpowiedź to: {CurrentGame.Word}\n Wygrałeś {CurrentGame.BalanceAccount.ToString()} zł!");
                     CurrentGame = new Game();
@@ -174,6 +176,7 @@ namespace Koło_Fortuny_v1
                     OffButtons();
                     ShowButtons();
                     btnRoll.Visible = true;
+
                 }
             }
             else
@@ -182,6 +185,7 @@ namespace Koło_Fortuny_v1
                 btnRoll.Visible = true;
                 button.Visible = false;
                 textBoxGuess.Enabled = false;
+                lblNotification.Text = "Brak litery w haśle";
             }
            
         }
@@ -191,6 +195,7 @@ namespace Koło_Fortuny_v1
             timer1.Start();
             OnButtons();
             btnRoll.Enabled = false;
+            lblNotification.Text = "";
         }
 
         private void textBoxGuess_KeyDown(object sender, KeyEventArgs e)
@@ -240,11 +245,9 @@ namespace Koło_Fortuny_v1
             if (textBoxGuess.Text == "")
             {
                 textBoxGuess.Text = "Wpisz odpowiedź...";
-
                 textBoxGuess.ForeColor = Color.Silver;
             }
         }
-
         int totalTime = 1000;
         int elapsedTime = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -255,14 +258,12 @@ namespace Koło_Fortuny_v1
                 timer1.Stop();
                 elapsedTime = 0;
                 OnButtons();
-                //textBoxGuess.Text = "Wpisz odpowiedź...";
                 textBoxGuess.Enabled = true;
             }
             else
             {
                 lblPrice.Text = $"Grasz o: {CurrentGame.RandomPrize().ToString()}";
                 OffButtons();
-                //textBoxGuess.Text = "Wpisz odpowiedź...";
             }
             
         }
