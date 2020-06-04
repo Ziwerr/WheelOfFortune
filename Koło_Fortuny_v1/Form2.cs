@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Koło_Fortuny_v1
@@ -17,13 +11,22 @@ namespace Koło_Fortuny_v1
         {
             InitializeComponent();
             CurrentGame = new Game();
-            lblWord.Text = CurrentGame.CurrentState;
-            lblCategory.Text = $"Kategoria: {CurrentGame.Category}";
+            ResetLabels();
             textBoxGuess.Enabled = false;
             UpdateCurrentErrors();
             OffButtons();
-            lblBalance.Text = $"Stan konta: {CurrentGame.BalanceAccount}";
         }
+
+        public void ResetLabels()
+        {
+            lblErrors.Text = CurrentGame.Errors.ToString();
+            lblWord.Text = CurrentGame.CurrentState;
+            lblCategory.Text = $"Kategoria: {CurrentGame.Category}";
+            lblBalance.Text = $"Stan konta: {CurrentGame.BalanceAccount}";
+            lblPrice.Text = CurrentGame.Prize.ToString();
+            lblNotification.Text = "";
+        }
+
         public void UpdateCurrentErrors()
         {
             lblErrors.Text = $"Błędy: {CurrentGame.Errors}";
@@ -65,6 +68,59 @@ namespace Koło_Fortuny_v1
             button34.Enabled = false;
             button35.Enabled = false;
             button36.Enabled = false;
+        }
+        public void OffConsonant()
+        {
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button8.Enabled = false;
+            button9.Enabled = false;
+            button10.Enabled = false;
+            button13.Enabled = false;
+            button14.Enabled = false;
+            button15.Enabled = false;
+            button16.Enabled = false;
+            button17.Enabled = false;
+            button18.Enabled = false;
+            button19.Enabled = false;
+            button20.Enabled = false;
+            button21.Enabled = false;
+            button24.Enabled = false;
+            button25.Enabled = false;
+            button26.Enabled = false;
+            button28.Enabled = false;
+            button29.Enabled = false;
+            button30.Enabled = false;
+            button32.Enabled = false;
+            button33.Enabled = false;
+            button34.Enabled = false;
+            button36.Enabled = false;
+        }
+        public void OnVowel()
+        {
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button7.Enabled = true;
+            button11.Enabled = true;
+            button12.Enabled = true;
+            button23.Enabled = true;
+            button22.Enabled = true;
+            button27.Enabled = true;
+            button35.Enabled = true;
+        }
+        public void OffVowel()
+        {
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button7.Enabled = false;
+            button11.Enabled = false;
+            button12.Enabled = false;
+            button23.Enabled = false;
+            button22.Enabled = false;
+            button27.Enabled = false;
+            button35.Enabled = false;
         }
         public void OnButtons()
         {
@@ -146,6 +202,13 @@ namespace Koło_Fortuny_v1
         private void Buttons_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+            if (button.Text.Equals("A") || button.Text.Equals("Ą") || button.Text.Equals("E") || button.Text.Equals("Ę") ||
+               button.Text.Equals("I") || button.Text.Equals("O") || button.Text.Equals("Ó") || button.Text.Equals("Y") || button.Text.Equals("U"))
+            {
+                CurrentGame.BalanceAccount = CurrentGame.BalanceAccount-300;
+                lblBalance.Text = CurrentGame.BalanceAccount.ToString();
+            }
+
             bool result = false;
             OffButtons();
             btnRoll.Visible = false;
@@ -153,7 +216,7 @@ namespace Koło_Fortuny_v1
             char text;
             text = Char.Parse(button.Text);
             result = CurrentGame.Try(text);
-            
+
             if (result)
             {
                 lblWord.Text = CurrentGame.CurrentState;
@@ -164,19 +227,16 @@ namespace Koło_Fortuny_v1
                 OffButtons();
                 button.Visible = false;
                 lblNotification.Text = "Dobry traf";
-
+ 
                 if (CurrentGame.LettersAndSpacesLeft() <= 0)
                 {
                     MessageBox.Show($"Brawo ! Prawidłowa odpowiedź to: {CurrentGame.Word}\n Wygrałeś {CurrentGame.BalanceAccount.ToString()} zł!");
                     CurrentGame = new Game();
-                    lblWord.Text = CurrentGame.CurrentState;
-                    lblCategory.Text = CurrentGame.Category;
-                    lblBalance.Text = CurrentGame.BalanceAccount.ToString();
-                    lblPrice.Text = CurrentGame.Prize.ToString();
+                    ResetLabels();
+                    UpdateCurrentErrors();
                     OffButtons();
                     ShowButtons();
                     btnRoll.Visible = true;
-
                 }
             }
             else
@@ -193,9 +253,9 @@ namespace Koło_Fortuny_v1
         {
             timer1.Enabled = true;
             timer1.Start();
-            OnButtons();
             btnRoll.Enabled = false;
             lblNotification.Text = "";
+            OnButtons();
         }
 
         private void textBoxGuess_KeyDown(object sender, KeyEventArgs e)
@@ -210,10 +270,8 @@ namespace Koło_Fortuny_v1
                     CurrentGame.BalanceAccount = CurrentGame.SumBalance(CurrentGame.BalanceAccount, CurrentGame.Prize);
                     MessageBox.Show($"Brawo ! Prawidłowa odpowiedź to: {CurrentGame.Word}\n Wygrałeś {CurrentGame.BalanceAccount.ToString()} zł!");
                     CurrentGame = new Game();
-                    lblWord.Text = CurrentGame.CurrentState;
-                    lblCategory.Text = CurrentGame.Category;
-                    lblBalance.Text = CurrentGame.BalanceAccount.ToString();
-                    lblPrice.Text = CurrentGame.Prize.ToString();
+                    UpdateCurrentErrors();
+                    ResetLabels(); 
                     OffButtons();
                     ShowButtons();
                     btnRoll.Visible = true;
@@ -235,7 +293,6 @@ namespace Koło_Fortuny_v1
             if(textBoxGuess.Text == "Wpisz odpowiedź...")
             {
                 textBoxGuess.Text = "";
-
                 textBoxGuess.ForeColor = Color.Black;
             }
         }
@@ -248,6 +305,7 @@ namespace Koło_Fortuny_v1
                 textBoxGuess.ForeColor = Color.Silver;
             }
         }
+
         int totalTime = 1000;
         int elapsedTime = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -257,15 +315,39 @@ namespace Koło_Fortuny_v1
             {
                 timer1.Stop();
                 elapsedTime = 0;
-                OnButtons();
+                if (CurrentGame.BalanceAccount >= 300)
+                {
+                    
+                    lblNotification.Text = "Możesz kupić samogłoskę";
+                }
+                else
+                {
+                    OffVowel();
+                }
                 textBoxGuess.Enabled = true;
             }
             else
             {
                 lblPrice.Text = $"Grasz o: {CurrentGame.RandomPrize().ToString()}";
-                OffButtons();
+                //OffButtons();
             }
             
+        }
+
+        private void button1_EnabledChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nowaGraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var decision = MessageBox.Show("Czy napewno chcesz rozpocząć nową grę ?","Nowa gra", MessageBoxButtons.YesNoCancel);
+            if(decision ==DialogResult.Yes)
+            {
+                CurrentGame = new Game();
+                ResetLabels();
+                btnRoll.Enabled = true;
+            }
         }
     }
 }

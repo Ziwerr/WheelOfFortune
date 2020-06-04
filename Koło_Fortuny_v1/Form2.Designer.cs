@@ -74,11 +74,16 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblNotification = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.graToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nowaGraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zakończGręToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button32
             // 
-            this.button32.BackColor = System.Drawing.Color.Silver;
+            this.button32.BackColor = System.Drawing.Color.GreenYellow;
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button32.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button32.ForeColor = System.Drawing.Color.Black;
@@ -92,7 +97,7 @@
             // 
             // button33
             // 
-            this.button33.BackColor = System.Drawing.Color.Silver;
+            this.button33.BackColor = System.Drawing.Color.GreenYellow;
             this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button33.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button33.ForeColor = System.Drawing.Color.Black;
@@ -106,7 +111,7 @@
             // 
             // button34
             // 
-            this.button34.BackColor = System.Drawing.Color.Silver;
+            this.button34.BackColor = System.Drawing.Color.GreenYellow;
             this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button34.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button34.ForeColor = System.Drawing.Color.Black;
@@ -120,7 +125,7 @@
             // 
             // button35
             // 
-            this.button35.BackColor = System.Drawing.Color.Silver;
+            this.button35.BackColor = System.Drawing.Color.GreenYellow;
             this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button35.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button35.ForeColor = System.Drawing.Color.Black;
@@ -134,7 +139,7 @@
             // 
             // button36
             // 
-            this.button36.BackColor = System.Drawing.Color.Silver;
+            this.button36.BackColor = System.Drawing.Color.GreenYellow;
             this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button36.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button36.ForeColor = System.Drawing.Color.Black;
@@ -148,7 +153,7 @@
             // 
             // button25
             // 
-            this.button25.BackColor = System.Drawing.Color.Silver;
+            this.button25.BackColor = System.Drawing.Color.GreenYellow;
             this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button25.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button25.ForeColor = System.Drawing.Color.Black;
@@ -162,7 +167,7 @@
             // 
             // button26
             // 
-            this.button26.BackColor = System.Drawing.Color.Silver;
+            this.button26.BackColor = System.Drawing.Color.GreenYellow;
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button26.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button26.ForeColor = System.Drawing.Color.Black;
@@ -176,7 +181,7 @@
             // 
             // button27
             // 
-            this.button27.BackColor = System.Drawing.Color.Silver;
+            this.button27.BackColor = System.Drawing.Color.GreenYellow;
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button27.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button27.ForeColor = System.Drawing.Color.Black;
@@ -190,7 +195,7 @@
             // 
             // button28
             // 
-            this.button28.BackColor = System.Drawing.Color.Silver;
+            this.button28.BackColor = System.Drawing.Color.GreenYellow;
             this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button28.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button28.ForeColor = System.Drawing.Color.Black;
@@ -204,7 +209,7 @@
             // 
             // button29
             // 
-            this.button29.BackColor = System.Drawing.Color.Silver;
+            this.button29.BackColor = System.Drawing.Color.GreenYellow;
             this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button29.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button29.ForeColor = System.Drawing.Color.Black;
@@ -218,7 +223,7 @@
             // 
             // button30
             // 
-            this.button30.BackColor = System.Drawing.Color.Silver;
+            this.button30.BackColor = System.Drawing.Color.GreenYellow;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button30.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button30.ForeColor = System.Drawing.Color.Black;
@@ -232,7 +237,7 @@
             // 
             // button19
             // 
-            this.button19.BackColor = System.Drawing.Color.Silver;
+            this.button19.BackColor = System.Drawing.Color.GreenYellow;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button19.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button19.ForeColor = System.Drawing.Color.Black;
@@ -246,7 +251,7 @@
             // 
             // button20
             // 
-            this.button20.BackColor = System.Drawing.Color.Silver;
+            this.button20.BackColor = System.Drawing.Color.GreenYellow;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button20.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button20.ForeColor = System.Drawing.Color.Black;
@@ -260,7 +265,7 @@
             // 
             // button21
             // 
-            this.button21.BackColor = System.Drawing.Color.Silver;
+            this.button21.BackColor = System.Drawing.Color.GreenYellow;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button21.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button21.ForeColor = System.Drawing.Color.Black;
@@ -274,7 +279,7 @@
             // 
             // button22
             // 
-            this.button22.BackColor = System.Drawing.Color.Silver;
+            this.button22.BackColor = System.Drawing.Color.GreenYellow;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button22.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button22.ForeColor = System.Drawing.Color.Black;
@@ -288,7 +293,7 @@
             // 
             // button23
             // 
-            this.button23.BackColor = System.Drawing.Color.Silver;
+            this.button23.BackColor = System.Drawing.Color.GreenYellow;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button23.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button23.ForeColor = System.Drawing.Color.Black;
@@ -302,7 +307,7 @@
             // 
             // button24
             // 
-            this.button24.BackColor = System.Drawing.Color.Silver;
+            this.button24.BackColor = System.Drawing.Color.GreenYellow;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button24.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button24.ForeColor = System.Drawing.Color.Black;
@@ -316,7 +321,7 @@
             // 
             // button13
             // 
-            this.button13.BackColor = System.Drawing.Color.Silver;
+            this.button13.BackColor = System.Drawing.Color.GreenYellow;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button13.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button13.ForeColor = System.Drawing.Color.Black;
@@ -330,7 +335,7 @@
             // 
             // button14
             // 
-            this.button14.BackColor = System.Drawing.Color.Silver;
+            this.button14.BackColor = System.Drawing.Color.GreenYellow;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button14.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button14.ForeColor = System.Drawing.Color.Black;
@@ -344,7 +349,7 @@
             // 
             // button15
             // 
-            this.button15.BackColor = System.Drawing.Color.Silver;
+            this.button15.BackColor = System.Drawing.Color.GreenYellow;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button15.ForeColor = System.Drawing.Color.Black;
@@ -358,7 +363,7 @@
             // 
             // button16
             // 
-            this.button16.BackColor = System.Drawing.Color.Silver;
+            this.button16.BackColor = System.Drawing.Color.GreenYellow;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button16.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button16.ForeColor = System.Drawing.Color.Black;
@@ -372,7 +377,7 @@
             // 
             // button17
             // 
-            this.button17.BackColor = System.Drawing.Color.Silver;
+            this.button17.BackColor = System.Drawing.Color.GreenYellow;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button17.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button17.ForeColor = System.Drawing.Color.Black;
@@ -386,7 +391,7 @@
             // 
             // button18
             // 
-            this.button18.BackColor = System.Drawing.Color.Silver;
+            this.button18.BackColor = System.Drawing.Color.GreenYellow;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button18.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button18.ForeColor = System.Drawing.Color.Black;
@@ -400,7 +405,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Silver;
+            this.button7.BackColor = System.Drawing.Color.GreenYellow;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button7.ForeColor = System.Drawing.Color.Black;
@@ -414,7 +419,7 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Silver;
+            this.button8.BackColor = System.Drawing.Color.GreenYellow;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button8.ForeColor = System.Drawing.Color.Black;
@@ -428,7 +433,7 @@
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.Silver;
+            this.button9.BackColor = System.Drawing.Color.GreenYellow;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button9.ForeColor = System.Drawing.Color.Black;
@@ -442,7 +447,7 @@
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.Silver;
+            this.button10.BackColor = System.Drawing.Color.GreenYellow;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button10.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button10.ForeColor = System.Drawing.Color.Black;
@@ -456,7 +461,7 @@
             // 
             // button11
             // 
-            this.button11.BackColor = System.Drawing.Color.Silver;
+            this.button11.BackColor = System.Drawing.Color.GreenYellow;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button11.ForeColor = System.Drawing.Color.Black;
@@ -470,7 +475,7 @@
             // 
             // button12
             // 
-            this.button12.BackColor = System.Drawing.Color.Silver;
+            this.button12.BackColor = System.Drawing.Color.GreenYellow;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button12.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button12.ForeColor = System.Drawing.Color.Black;
@@ -484,7 +489,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Silver;
+            this.button6.BackColor = System.Drawing.Color.GreenYellow;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button6.ForeColor = System.Drawing.Color.Black;
@@ -498,7 +503,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
+            this.button5.BackColor = System.Drawing.Color.GreenYellow;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button5.ForeColor = System.Drawing.Color.Black;
@@ -512,7 +517,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.BackColor = System.Drawing.Color.GreenYellow;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button4.ForeColor = System.Drawing.Color.Black;
@@ -526,7 +531,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.BackColor = System.Drawing.Color.GreenYellow;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3.ForeColor = System.Drawing.Color.Black;
@@ -540,7 +545,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackColor = System.Drawing.Color.GreenYellow;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.Black;
@@ -554,7 +559,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackColor = System.Drawing.Color.GreenYellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.Black;
@@ -573,7 +578,7 @@
             this.lblWord.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblWord.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblWord.ForeColor = System.Drawing.Color.Black;
-            this.lblWord.Location = new System.Drawing.Point(316, 156);
+            this.lblWord.Location = new System.Drawing.Point(255, 200);
             this.lblWord.Name = "lblWord";
             this.lblWord.Size = new System.Drawing.Size(613, 106);
             this.lblWord.TabIndex = 150;
@@ -586,7 +591,7 @@
             this.lblErrors.BackColor = System.Drawing.Color.Transparent;
             this.lblErrors.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblErrors.ForeColor = System.Drawing.Color.Yellow;
-            this.lblErrors.Location = new System.Drawing.Point(114, 184);
+            this.lblErrors.Location = new System.Drawing.Point(81, 184);
             this.lblErrors.Name = "lblErrors";
             this.lblErrors.Size = new System.Drawing.Size(101, 34);
             this.lblErrors.TabIndex = 151;
@@ -598,7 +603,7 @@
             this.lblCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCategory.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblCategory.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCategory.Location = new System.Drawing.Point(317, 86);
+            this.lblCategory.Location = new System.Drawing.Point(255, 124);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(612, 46);
             this.lblCategory.TabIndex = 152;
@@ -621,10 +626,12 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPrice.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblPrice.Location = new System.Drawing.Point(867, 393);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(0, 29);
+            this.lblPrice.Size = new System.Drawing.Size(0, 32);
             this.lblPrice.TabIndex = 154;
             // 
             // lblBalance
@@ -633,7 +640,7 @@
             this.lblBalance.BackColor = System.Drawing.Color.Transparent;
             this.lblBalance.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblBalance.ForeColor = System.Drawing.Color.Yellow;
-            this.lblBalance.Location = new System.Drawing.Point(951, 195);
+            this.lblBalance.Location = new System.Drawing.Point(888, 184);
             this.lblBalance.Name = "lblBalance";
             this.lblBalance.Size = new System.Drawing.Size(0, 34);
             this.lblBalance.TabIndex = 155;
@@ -642,7 +649,7 @@
             // 
             this.textBoxGuess.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxGuess.Location = new System.Drawing.Point(392, 625);
+            this.textBoxGuess.Location = new System.Drawing.Point(423, 605);
             this.textBoxGuess.Name = "textBoxGuess";
             this.textBoxGuess.Size = new System.Drawing.Size(304, 30);
             this.textBoxGuess.TabIndex = 156;
@@ -672,11 +679,44 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(419, 9);
+            this.label1.Location = new System.Drawing.Point(389, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(350, 60);
             this.label1.TabIndex = 158;
             this.label1.Text = "Koło Fortuny";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.graToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1182, 28);
+            this.menuStrip1.TabIndex = 159;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // graToolStripMenuItem
+            // 
+            this.graToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nowaGraToolStripMenuItem,
+            this.zakończGręToolStripMenuItem});
+            this.graToolStripMenuItem.Name = "graToolStripMenuItem";
+            this.graToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.graToolStripMenuItem.Text = "Gra";
+            // 
+            // nowaGraToolStripMenuItem
+            // 
+            this.nowaGraToolStripMenuItem.Name = "nowaGraToolStripMenuItem";
+            this.nowaGraToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nowaGraToolStripMenuItem.Text = "Nowa gra";
+            this.nowaGraToolStripMenuItem.Click += new System.EventHandler(this.nowaGraToolStripMenuItem_Click);
+            // 
+            // zakończGręToolStripMenuItem
+            // 
+            this.zakończGręToolStripMenuItem.Name = "zakończGręToolStripMenuItem";
+            this.zakończGręToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.zakończGręToolStripMenuItem.Text = "Zakończ grę";
             // 
             // Form2
             // 
@@ -729,8 +769,11 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -783,5 +826,9 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblNotification;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem graToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nowaGraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zakończGręToolStripMenuItem;
     }
 }

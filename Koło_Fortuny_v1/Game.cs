@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Koło_Fortuny_v1
 {
@@ -30,6 +28,18 @@ namespace Koło_Fortuny_v1
             var prize = Prizes.OrderBy(x => Guid.NewGuid()).FirstOrDefault();
             Prize = Convert.ToInt32(prize);
             return Prize;
+        }
+
+        public bool CheckAccountToBuyVowel(int balance)
+        {
+            if(balance>=300)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public int SumBalance(int price, int balance)
